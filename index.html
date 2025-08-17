@@ -9,12 +9,9 @@
 <body>
   <header>
     <nav>
-      <div class="logo">
-        <a href="#">Photographer Portfolio</a>
-      </div>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Galleries</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
@@ -23,14 +20,14 @@
 
   <main>
     <section class="hero">
-      <h1>Welcome to my Photography Portfolio</h1>
-      <p>Explore my stunning collection of photographs.</p>
-      <a href="#" class="btn">View Gallery</a>
+      <h1>Welcome to My Photographer Portfolio</h1>
+      <p>Explore my stunning photo galleries and get in touch for booking inquiries.</p>
+      <a href="#" class="cta">View Galleries</a>
     </section>
 
-    <section class="gallery">
-      <h2>Featured Galleries</h2>
-      <div class="gallery-grid">
+    <section class="galleries">
+      <h2>Explore My Galleries</h2>
+      <div class="gallery-container">
         <div class="gallery-item">
           <img src="portrait.jpg" alt="Portrait Gallery">
           <h3>Portraits</h3>
@@ -49,31 +46,33 @@
     <section class="about">
       <h2>About Me</h2>
       <div class="about-content">
-        <img src="profile.jpg" alt="Profile Picture">
+        <img src="profile.jpg" alt="Photographer Profile">
         <div class="bio">
           <h3>John Doe</h3>
-          <p>I am a professional photographer with over 10 years of experience in the industry. My passion for capturing the world through my lens has led me to create this portfolio website to showcase my work.</p>
-          <p>I specialize in portraits, landscapes, and event photography, and I'm always excited to take on new challenges. Feel free to explore my galleries and don't hesitate to contact me for any inquiries.</p>
+          <p>I am a professional photographer with a passion for capturing the beauty of the world around us. With years of experience, I strive to create stunning images that tell a story and evoke emotion.</p>
         </div>
       </div>
     </section>
 
     <section class="contact">
       <h2>Get in Touch</h2>
-      <form>
+      <form id="contact-form">
         <div class="form-group">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required>
+          <div class="error-message"></div>
         </div>
         <div class="form-group">
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required>
+          <div class="error-message"></div>
         </div>
         <div class="form-group">
           <label for="message">Message:</label>
           <textarea id="message" name="message" required></textarea>
+          <div class="error-message"></div>
         </div>
-        <button type="submit" class="btn">Send Message</button>
+        <button type="submit">Send Message</button>
       </form>
     </section>
   </main>
